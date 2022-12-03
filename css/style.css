@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    color: white;
+    width: 100vw;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.color-crimson{
+    color: crimson;
+}
+
+
+.navbar .right{
+    padding-right: 40px;
+}
+
+.navbar .right li{
+    padding: 14px 10px;
+    font-size: 15px;
+    font-weight: 550;
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .left h4{
+    padding: 14px 0 0 40px;
+}
+
+.navbar .right li a{
+    color: white;
+    text-decoration: none;
+}
+
+.home{
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+.home .left{
+    padding: 120px 10px 100px 120px;
+}
+.home .right{
+    padding: 100px 100px 100px 0;
+}
+.home .right img{
+    width: 415px;
+}
+
+.home .left .name{
+    font-size: 45px;
+    color: crimson;
+    padding: 4px 0;
+}
+
+.resume-button{
+    font-size: 16px;
+    margin-top: 10px;
+    width: 120px;
+    height: 35px;
+    background-color: crimson;
+    border: none;
+    outline: none;
+    border-radius:8px;
+    color: white;
+}
+
+.resume-button:hover{
+    background-color: black;
+    color: crimson;
+    border: 2px solid crimson;
+}
+
+
+
+
+.about{
+    padding-top: 10px;
+    height: 100vh;
+    padding: 0 0 50px 0;
+    background: burlywood;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about img{
+    width: 295px;
+    height: 295px;
+    object-fit: cover;
+}
+
+.about .image{
+    width: 295px;
+    height: 295px;
+    border-radius: 15px;
+    background: #aec6c9;
+    box-shadow: 4px 4px 4px 4px grey;
+}
+
+.about .right h1{
+    padding: 5px 0;
+}
+
+
+.about .left{
+    padding: 10px 0 60px 0;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;
+}
+.about .right{
+    padding: 10px 40px 20px 0;
+    width: 50%;
+    text-align: justify;
+}
+
+.title{
+    padding: 25px 0 0 0;
+    width: 100%;
+    text-align: center;
+    font-size: 32px;
+}
+
+
+.skills{
+    color: white;
+    padding-top: 20px;
+    height: 100vh;
+    background-color: black;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.skills .left{
+    padding: 20px;
+    text-align: justify;
+    width: 45%;
+    height: 45vh;
+
+}
+.skills .right{
+    padding: 80px;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+.skills .skilldiv{
+    width: 40vw;
+    margin: 15px 0;
+}
+
+
+.skills .bars{
+    position: relative;
+    margin-top: 8px;
+    width: 40vw;
+    background-color: white;
+    height: 8px;
+    border-radius:6px ;
+}
+
+.skills .bars::before{
+    position: absolute;
+    content: "";
+    top:0;
+    left: 0;
+    height: 8px;
+    border-radius:6px ;
+}
+
+
+
+.skills .python .bars::before{
+    width: 90%;
+    background-color: #306998;
+}
+
+.skills .java .bars::before{
+    width: 85%;
+    background-color: crimson;
+}
+
+.skills .javascript .bars::before{
+    width: 85%;
+    background-color: yellow;
+}
+
+.skills .django .bars::before{
+    width: 85%;
+    background-color: #092e20;
+}
+
+.skills .angular .bars::before{
+    width: 80%;
+    background-color: #dd1b16;
+}
+.skills .html .bars::before{
+    width: 90%;
+    background-color: #F06529;
+}
+.skills .css .bars::before{
+    width: 80%;
+    background-color: #2965f1;
+}
+
+
+.menu-icon{
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    display: none;
+    font-size: 40px;
+}
+
+
+.projects .card .icon img{
+    width: 35px;
+    cursor: pointer;
+}
+
+.projects .card .icon .github, .projects .card .icon .web{
+    padding: 10px 20px;
+}
+
+.projects .card {
+    background-color: #ebecda;
+    width: 280px;
+    height: 250px;
+    padding:10px 10px ;
+    margin: 25px 10px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px 6px grey;
+}
+
+.projects .card:hover{
+    background-color: burlywood;
+    color: white;
+}
+
+
+
+.projects{
+    padding: 20px 40px;
+    height: 100vh;
+    background: rgb(243, 224, 189);
+}
+
+
+.contact{
+    height: 72vh;
+    padding: 20px;
+    background: rgb(252, 234, 206);
+}
+
+.contact .left{
+    width: 50%;
+    height: 100%;
+    padding: 40px 0 0 28px;
+}
+
+.contact .right{
+    width: 50%;
+}
+
+.contact .fa{
+    font-size: 28px;
+    padding: 10px;
+}
+
+.contact .left .info{
+    padding: 20px 0;
+}
+
+.contact .left .info h4{
+    font-size: 25px;
+    padding: 0 10px;
+}
+
+.contact .right .form {
+    /* background-color: yellow; */
+    text-align: center;
+}
+
+.contact .right .form input{
+    width: 400px;
+    height: 35px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid rgb(236, 194, 110);
+    border-radius: 8px;
+    outline: none;
+    
+    background: rgb(255, 249, 237);
+}
+
+.contact .right .form .description{
+    height: 80px;
+}
+
+.contact .right .form button{
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    margin-top: 10px;
+    background-color: rgb(245, 135, 157);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
+.contact .right .form button:hover{
+    background-color: rgb(255, 249, 237);
+    color: rgb(245, 135, 157);
+}
+
+
+.footer{
+    height: 20vh;
+    background-color: black;
+    padding-top: 10px;
+}
+
+
+.footer .icon{
+    width: 46px;
+    height: 46px;
+    background-color: rgb(199, 186, 186);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .icon i{
+    font-size: 35px;
+}
+
+.footer .icon:hover{
+    background-color: crimson;
+    color: white;
+}
+
+
+.footer li{
+    color: white;
+    padding: 14px 10px;
+    font-size: 15px;
+    font-weight: 550;
+    list-style: none;
+    display: inline-block;
+}
+
+.footer li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer .nav{
+    width: 80vh;
+    margin: auto;
+}
+
+.footer .nav .footer-nav{
+    padding-top: 15px;
+}
+
+
+@media (max-width:1000px){
+    
+    .home .left{
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .home .right{
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about{
+        height: 100%;
+    }
+
+    .about .left{
+        padding: 20px ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .about .right{
+        padding: 20px;
+        width: 100%;
+        text-align: justify;
+    }
+
+
+    .skills{
+        height: 100%;
+    }
+
+    .skills .left{
+        padding: 40px;
+        width: 100%;
+        height: 45vh;
+    }
+
+    .skills .right{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .skills .skilldiv{
+        width: 80vw;
+    }
+    
+    .skills .bars{
+        width: 80vw;
+    }
+    
+
+    .navbar .right{
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top:-100vh;
+        background-color: black;
+        padding-top: 50px;
+    }
+
+    .navbar .right li{
+        display: block;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .navbar .right.show-menu{
+        top:0;
+        left: 0;
+    }
+
+    .menu-icon{
+        display: block;
+    }
+
+    .projects{
+        height: 100%;
+    }
+
+    .contact{
+        height: 100%;
+        padding-top: 10px;
+    }
+
+    .contact .left{
+        width: 100%;
+        height: 100%;
+        padding: 40px 0 0 28px;
+    }
+    
+    .contact .right{
+        width: 100%;
+    }
+    
+    .contact .right .form input{
+        width: 80vw;
+    }
+
+    .contact .fa{
+        font-size: 25px;
+        padding: 10px;
+    }
+    
+ 
+    .contact .left .info h4{
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    .footer{
+        height: 14vh;
+    }
+   
+}
