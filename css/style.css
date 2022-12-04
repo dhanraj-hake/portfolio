@@ -31,6 +31,9 @@
 .justify-around{
     justify-content: space-around;
 }
+.justify-evenly{
+    justify-content: space-evenly;
+}
 
 .flex-column{
     display: flex;
@@ -291,11 +294,12 @@
 .contact .left{
     width: 50%;
     height: 100%;
-    padding: 40px 0 0 28px;
+    padding: 10px 0 0 28px;
 }
 
 .contact .right{
     width: 50%;
+    padding: 20px 0 0 28px;
 }
 
 .contact .fa{
@@ -347,6 +351,7 @@
 .contact .right .form button:hover{
     background-color: rgb(255, 249, 237);
     color: rgb(245, 135, 157);
+    border: 1px solid rgb(245, 135, 157);
 }
 
 
@@ -392,14 +397,35 @@
     color: white;
 }
 
-.footer .nav{
-    width: 80vh;
-    margin: auto;
+.footer-nav{
+    padding-top: 10px;
 }
 
 .footer .nav .footer-nav{
     padding-top: 15px;
 }
+
+.about-social-button{
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    margin: 6px;
+}
+
+.about-social-button i{
+    font-size: 35px;
+}
+
+.about-social-button.git{
+    background-color: #171515 ;
+    color: white;
+}
+.about-social-button.linkedin{
+    color:  #0A66C2;
+    background-color: white;
+}
+
 
 
 @media (max-width:1000px){
