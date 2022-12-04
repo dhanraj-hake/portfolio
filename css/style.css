@@ -12,7 +12,7 @@
     z-index: 1000;
     color: white;
     width: 100vw;
-    height: 50px;
+    height: 55px;
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -242,8 +242,8 @@
 
 .menu-icon{
     position: fixed;
-    top: 5px;
-    right: 5px;
+    top: 2px;
+    right: 2px;
     display: none;
     font-size: 40px;
 }
@@ -313,7 +313,6 @@
 }
 
 .contact .right .form {
-    /* background-color: yellow; */
     text-align: center;
 }
 
@@ -469,6 +468,7 @@
         width: 100vw;
         height: 100vh;
         position: fixed;
+        overflow: hidden;
         top:-100vh;
         background-color: black;
         padding-top: 50px;
@@ -525,6 +525,11 @@
 
     .footer{
         height: 14vh;
+    }
+
+    .fa-xmark{
+        padding: 5px;
+        font-size: 50px;
     }
    
 }
