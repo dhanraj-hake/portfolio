@@ -630,9 +630,21 @@
         padding: 0 10px;
     }
 
-    .footer{
-        max-height: 15vh;
+    .contact .left .email h4{
+        font-size: 15px;
+        padding: 0 10px;
     }
+
+    .contact .email .fa{
+        font-size: 18px;
+        padding: 10px;
+    }
+
+
+
+    /*.footer{
+        max-height: 15vh;
+    }*/
 
     .fa-xmark{
         padding: 5px;
