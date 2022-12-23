@@ -68,6 +68,14 @@
     text-decoration: none;
 }
 
+.navbar .link:hover{
+    padding:0 0 4px 0;
+    border-bottom: 2px solid white;
+    transition: all 0.2s ease-in;
+}
+
+
+
 .home{
     color: white;
     background-color: black;
@@ -120,19 +128,76 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.about img{
+/* .about img{
     width: 295px;
     height: 295px;
+    object-fit: cover;
+} */
+
+.about img{
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
     object-fit: cover;
 }
 
 .about .image{
+    width: 155px;
+    height: 155px;
+    margin: 8px 0 0 0;
+}
+
+.about .image span{
+    padding: 6px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.about .card{
+    width: 270px;
+    height: 275px;
+    border-radius: 25px;
+    background: #aec6c9;
+    box-shadow: 4px 4px 4px 4px grey;
+
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.card a{
+    color: black;
+}
+
+.card .icons{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+
+    padding: 6px;
+}
+
+.card-icon{
+    font-size: 28px;
+}
+
+.card-icon:hover{
+    font-size: 35px;
+}
+
+.about .card a:hover{
+    color: crimson;
+}
+
+
+/* .about .image{
     width: 295px;
     height: 295px;
     border-radius: 15px;
     background: #aec6c9;
     box-shadow: 4px 4px 4px 4px grey;
-}
+} */
 
 .about .right h1{
     padding: 5px 0;
@@ -163,7 +228,7 @@
 .skills{
     color: white;
     padding-top: 20px;
-    height: 100vh;
+    height: 110vh;
     background-color: black;
 
     font-family: 'Poppins', sans-serif;
@@ -219,6 +284,11 @@
     background-color: crimson;
 }
 
+.skills .cpp .bars::before{
+    width: 80%;
+    background-color: blue;
+}
+
 .skills .javascript .bars::before{
     width: 85%;
     background-color: yellow;
@@ -233,6 +303,12 @@
     width: 80%;
     background-color: #dd1b16;
 }
+
+.skills .react .bars::before{
+    width: 80%;
+    background-color: #61dbfb ;
+}
+
 .skills .html .bars::before{
     width: 90%;
     background-color: #F06529;
@@ -555,7 +631,11 @@
 
     .fa-xmark{
         padding: 5px;
-        font-size: 50px;
+        font-size: 45px;
+    }
+    .fa-bars{
+        padding: 5px;
+        font-size: 45px;
     }
    
 }
