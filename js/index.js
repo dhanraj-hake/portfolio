@@ -25,3 +25,15 @@ links.forEach((e)=>{
     })
 });
 
+
+const navLinks = document.getElementsByClassName("link");
+
+console.log(navLinks);
+
+Array.from(navLinks).forEach((element)=>{
+    element.addEventListener("click", ()=>{
+        document.getElementById("menu-icon").classList.remove("fa-xmark");
+        document.getElementById("menu-icon").classList.add("fa-bars");
+    });
+});
+
