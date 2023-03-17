@@ -345,6 +345,13 @@
     margin: 25px 10px;
     border-radius: 10px;
     box-shadow: 4px 4px 8px 6px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projects .project-heading{
+    margin: 1rem 0;
 }
 
 .projects .card:hover{
@@ -356,8 +363,9 @@
 
 .projects{
     padding: 20px 40px;
-    height: 100vh;
+    min-height: 100vh;
     background: rgb(243, 224, 189);
+    gap: 0.5rem;
 }
 
 
@@ -612,7 +620,8 @@
     }
     
     .contact .right{
-        width: 100%;
+        width: 100%;    
+        padding: 8px 0;
     }
     
     .contact .right .form input{
@@ -626,14 +635,14 @@
     
  
     .contact .left .info h4{
-        font-size: 20px;
-        padding: 0 10px;
+        font-size: 18px;
+        padding: 0;
     }
-
+/* 
     .contact .left .email h4{
         font-size: 15px;
         padding: 0 10px;
-    }
+    } */
 
     .contact .email .fa{
         font-size: 18px;
@@ -652,7 +661,7 @@
     }
     .fa-bars{
         padding: 5px;
-        font-size: 45px;
+        font-size: 40px;
     }
    
 }
