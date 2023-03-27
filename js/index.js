@@ -37,3 +37,68 @@ Array.from(navLinks).forEach((element)=>{
     });
 });
 
+
+
+const contactForm = document.getElementById("contactForm");
+
+const modal = document.getElementById("modal");
+
+const modalmessage = document.getElementById("modalmessage");
+
+contactForm.addEventListener("submit", async(event)=>{
+    event.preventDefault();
+    
+
+
+    const name = event.target.name.value;
+    const email = event.target.email.value;
+    const phone = event.target.phone.value;
+    const desc = event.target.desc.value;
+
+    contactForm.reset();
+
+    try{
+
+        const response = await fetch("http://dhanrajportfolioapi.pythonanywhere.com/contact",{
+            method : "POST",
+            headers: {
+                "Content-Type" : "application/json"
+            },
+            body : JSON.stringify({
+                name : name,
+                email : email,
+                phone : phone,
+                desc : desc
+            })
+        });
+
+        const result = await response.json();
+        console.log(result);
+
+        if(result.message==="success"){
+            modalmessage.textContent = "Your Contact form Send to Dhanraj hake"
+            modalmessage.style.backgroundColor = "#d1e7dd";
+            setTimeout(() => {
+                modal.style.display = "none";
+            }, 4000);
+        }
+        else{
+            modalmessage.textContent = "Enter Valid Detail";
+            modalmessage.style.backgroundColor = "#d9534f";
+            setTimeout(() => {
+                modal.style.display = "none";
+            }, 4000);
+        }
+
+        modal.style.display = "block";
+        
+        
+        
+
+    }
+    catch(error){
+
+    }
+
+
+})

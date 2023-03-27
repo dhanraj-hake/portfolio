@@ -343,7 +343,7 @@
     height: 250px;
     padding:10px 10px ;
     margin: 25px 10px;
-    border-radius: 10px;
+    border-radius: 18px;
     box-shadow: 4px 4px 8px 6px grey;
     display: flex;
     flex-direction: column;
@@ -511,6 +511,33 @@
 }
 
 
+.modal{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 20px;
+    height: 40px;
+    color: white;
+    top: 57px;
+    right: 0;
+    z-index: 10000;
+    background: transparent;
+}
+
+.modal p{
+    width: 100%;
+    padding: 8px;
+    color: black;
+    background-color: #d1e7dd;
+    height: 40px;
+    width: 40%;
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+
 
 @media (max-width:1000px){
     
@@ -664,4 +691,9 @@
         font-size: 40px;
     }
    
+    .modal p{
+        width: 80%;
+        font-size: 16px;
+    }
+
 }
