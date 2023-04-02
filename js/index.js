@@ -47,8 +47,6 @@ const modalmessage = document.getElementById("modalmessage");
 
 contactForm.addEventListener("submit", async(event)=>{
     event.preventDefault();
-    
-
 
     const name = event.target.name.value;
     const email = event.target.email.value;
@@ -83,7 +81,7 @@ contactForm.addEventListener("submit", async(event)=>{
             }, 4000);
         }
         else{
-            modalmessage.textContent = "Enter Valid Detail";
+            modalmessage.textContent = result.detail;
             modalmessage.style.backgroundColor = "#d9534f";
             setTimeout(() => {
                 modal.style.display = "none";
@@ -92,13 +90,12 @@ contactForm.addEventListener("submit", async(event)=>{
 
         modal.style.display = "block";
         
-        
-        
-
     }
     catch(error){
-
+        modalmessage.textContent = result.detail;
+        modalmessage.style.backgroundColor = "#d9534f";
+        setTimeout(() => {
+            modal.style.display = "none";
+        }, 4000);
     }
-
-
-})
+});
