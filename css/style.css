@@ -238,8 +238,6 @@
     padding: 20px;
     text-align: justify;
     width: 45%;
-    height: 45vh;
-
 }
 .skills .right{
     padding: 80px;
@@ -297,6 +295,11 @@
 .skills .django .bars::before{
     width: 85%;
     background-color: #092e20;
+}
+
+.skills .fastapi .bars::before{
+    width: 75%;
+    background-color: rgb(13, 160, 123);
 }
 
 .skills .angular .bars::before{
@@ -510,6 +513,11 @@
     background-color: white;
 }
 
+.skill-desc{
+    color: red;
+    background-color: yellow;
+    text-align:justify;
+}
 
 
 @media (max-width:1000px){
