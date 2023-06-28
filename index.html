@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="I am a Full Stack web developer skilled in Python, JavaScript, Django, and more. Contact me for software development projects.">
     <meta name="description" content="dhanraj hake web developer harsh hake ">
@@ -443,18 +444,18 @@
                 </div>
                 <div class="right">
                     <div class="form">
-                        <form action="#">
+                        <form id="contactForm">
                             <div class="name">
-                                <input type="text" name="name" id="name" placeholder="Name">
+                                <input required type="text" name="name" id="name" placeholder="Name">
                             </div>
                             <div class="email">
-                                <input type="email" name="name" id="email" placeholder="Email">
+                                <input required type="email" name="email" id="email" placeholder="Email">
                             </div>
                             <div class="phone">
-                                <input type="number" name="name" id="phone" placeholder="Mobile Number">
+                                <input required type="number" name="phone" id="phone" placeholder="Mobile Number">
                             </div>
                             <div class="desc">
-                                <input type="text" class="description" name="name" id="desc" placeholder="Description">
+                                <input required type="text" class="description" name="desc" id="desc" placeholder="Description">
                             </div>
                             <div class="button">
                                 <button type="submit">Send</button>
@@ -531,6 +532,9 @@
         </footer>
     </section>
 
+    <div class="modal" id="modal">
+        <p id="modalmessage">Your Contact form Send to Dhanraj</p>
+    </div>
 
     <script src="js/index.js"></script>
 </body>
